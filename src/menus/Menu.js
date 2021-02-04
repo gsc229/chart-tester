@@ -28,10 +28,15 @@ const Menu = ({logout, clearCurrentRoutine}) => {
 
           <NavDropdown active={isActivePath('dropdown')} title='React Charts 2' aria-labelledby="navbarDropdown">
             <NavDropdown.Item active={isActivePath('/react-charts2-doughnut')} as={Link} to='/react-charts2-doughnut'>Doughnut</NavDropdown.Item>
+            <NavDropdown.Item active={isActivePath('/react-charts2-pie')} as={Link} to='/react-charts2-pie'>Pie</NavDropdown.Item>
+          </NavDropdown>
+
+          <NavDropdown active={isActivePath('dropdown')} title='Victory' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/victory-pie')} as={Link} to="/victory">Pie</NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown active={isActivePath('dropdown')} title='Nivo' aria-labelledby="navbarDropdown">
-            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+            <NavDropdown.Item active={isActivePath('/nivo-pie')} as={Link} to="/nivo-pie">Pie</NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown active={isActivePath('dropdown')} title='Biz Charts (Alibaba)' aria-labelledby="navbarDropdown">

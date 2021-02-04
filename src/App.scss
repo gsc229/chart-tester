@@ -5,3 +5,10 @@
 
 // line chart
 @import './pages/ReactChartsLineChart/line_chart.scss';
+
+body{
+  background-color: $bs-dark;
+  canvas{
+    color: 'white'
+  }
+}
