@@ -27,7 +27,7 @@ const Menu = ({logout, clearCurrentRoutine}) => {
           </NavDropdown>
 
           <NavDropdown active={isActivePath('dropdown')} title='React Charts 2' aria-labelledby="navbarDropdown">
-            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+            <NavDropdown.Item active={isActivePath('/react-charts2-doughnut')} as={Link} to='/react-charts2-doughnut'>Doughnut</NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown active={isActivePath('dropdown')} title='Nivo' aria-labelledby="navbarDropdown">

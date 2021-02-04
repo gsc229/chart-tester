@@ -1,13 +1,13 @@
 import React from 'react'
 import LayoutOne from '../../layouts/layout_one/LayoutOne'
 import { Chart } from "react-charts";
-import {userSetGroups, userExSets, exerciseExSets, exerciseIdName} from '../../data/userExerciseData'
+import {userSetGroups, userExSets, exerciseIdExSets, exerciseIdName} from '../../data/userExerciseData'
 
 import useDemoConfig from "./useDemoConfig";
 import useLagRadar from "./useLagRadar";
 import ResizableBox from "./ResizableBox";
 
-console.log({userSetGroups, userExSets, exerciseExSets, exerciseIdName})
+console.log({userSetGroups, userExSets, exerciseIdExSets, exerciseIdName})
 
 const LineChart = () => {
 
