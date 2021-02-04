@@ -21,16 +21,27 @@ const Menu = ({logout, clearCurrentRoutine}) => {
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
         <Nav>
-          <Nav.Link active={isActivePath('/line-chart')} as={Link} to='/line-chart'>Line Chart</Nav.Link>
-          <NavDropdown active={isActivePath('dropdown')} title='Manage' aria-labelledby="navbarDropdown">
-            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
-            <NavDropdown.Item active={isActivePath('/create-routine')} as={Link} to="/create-routine">New Routine</NavDropdown.Item>
-            {/* <NavDropdown.Item active={isActivePath('/find-routine')} as={Link} to="/find-routine">Find Routines</NavDropdown.Item> */}
-            <NavDropdown.Item><hr className="dropdown-divider" /></NavDropdown.Item>
-            <NavDropdown.Item active={isActivePath('/manage-exercises')} as={Link} to="/manage-exercises">My Exercises</NavDropdown.Item>
-            <NavDropdown.Item active={isActivePath('/browse-exercises')} as={Link} to="/browse-exercises">Browse Exercises</NavDropdown.Item>
+
+          <NavDropdown active={isActivePath('dropdown')} title='React Charts' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/react-charts-line')} as={Link} to='/react-charts-line'>React Charts - Line</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link as={Link} className="nav-Nav.link" to="/">Log Out</Nav.Link>
+
+          <NavDropdown active={isActivePath('dropdown')} title='React Charts 2' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+          </NavDropdown>
+
+          <NavDropdown active={isActivePath('dropdown')} title='Nivo' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+          </NavDropdown>
+
+          <NavDropdown active={isActivePath('dropdown')} title='Biz Charts (Alibaba)' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+          </NavDropdown>
+
+          {/* <NavDropdown active={isActivePath('dropdown')} title='Recharts' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
+          </NavDropdown> */}
+
         </Nav>
         </Navbar.Collapse>
       </Navbar>
