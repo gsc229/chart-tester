@@ -26,6 +26,36 @@ const DataTest = () => {
     <LayoutOne>
       <h1>Data Test</h1>
       <div 
+      style={{color: 'white', width: '300px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+      className="select-container">
+        <div>
+          <label style={{marginRight: '10px'}} htmlFor="routines">Rotuines</label>
+          <input
+          value={show.routines}
+          checked={show.routines}
+          onChange={(e) => setShow({...show, [e.target.name]: !show[e.target.name]})}
+          type='checkbox' id='routines' name='routines'  />
+        </div>
+
+        <div>
+          <label style={{marginRight: '10px'}} htmlFor="setGroups">Set Groups</label>
+          <input
+          value={show.setGroups}
+          checked={show.setGroups}
+          onChange={(e) => setShow({...show, [e.target.name]: !show[e.target.name]})}
+          type='checkbox' id='setGroups' name='setGroups'  />
+        </div>
+
+        <div>
+          <label style={{marginRight: '10px'}} htmlFor="exSets">Ex. Sets</label>
+          <input
+          value={show.exSets}
+          checked={show.exSets}
+          onChange={(e) => setShow({...show, [e.target.name]: !show[e.target.name]})}
+          type='checkbox' id='exSets' name='exSets'  />
+        </div>
+      </div>
+      <div 
       style={{color: 'white', display: 'flex'}}
       className="data-container">
         {show.routines && 
