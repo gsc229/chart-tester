@@ -1,4 +1,4 @@
-export const defs={[
+export const defs=[
   {
       id: 'dots',
       type: 'patternDots',
@@ -17,4 +17,4 @@ export const defs={[
       lineWidth: 6,
       spacing: 10
   }
-]}
+]

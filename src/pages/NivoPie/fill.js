@@ -1,4 +1,4 @@
-export const fill={[
+export const fill=[
   {
       match: {
           id: 'ruby'
@@ -47,4 +47,4 @@ export const fill={[
       },
       id: 'lines'
   }
-]}
+]

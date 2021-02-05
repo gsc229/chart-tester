@@ -46,7 +46,9 @@ const Menu = ({logout, clearCurrentRoutine}) => {
           {/* <NavDropdown active={isActivePath('dropdown')} title='Recharts' aria-labelledby="navbarDropdown">
             <NavDropdown.Item active={isActivePath('/manage-routines')} as={Link} to="/manage-routines">Saved Routines</NavDropdown.Item>
           </NavDropdown> */}
-
+          <NavDropdown active={isActivePath('dropdown')} title='Data Tests' aria-labelledby="navbarDropdown">
+            <NavDropdown.Item active={isActivePath('/data-tests')} as={Link} to="/data-tests">Data Tests</NavDropdown.Item>
+          </NavDropdown>
         </Nav>
         </Navbar.Collapse>
       </Navbar>

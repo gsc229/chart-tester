@@ -1,5 +1,7 @@
-export const legends={[
+export const legends=[
   {
+      
+      itemTextColor: '#fff',
       anchor: 'bottom',
       direction: 'row',
       justify: false,
@@ -8,7 +10,6 @@ export const legends={[
       itemsSpacing: 0,
       itemWidth: 100,
       itemHeight: 18,
-      itemTextColor: '#999',
       itemDirection: 'left-to-right',
       itemOpacity: 1,
       symbolSize: 18,
@@ -17,9 +18,10 @@ export const legends={[
           {
               on: 'hover',
               style: {
-                  itemTextColor: '#000'
+                  itemTextColor: 'rgb(255, 255, 255)',
               }
+
           }
       ]
   }
-]}
+]
